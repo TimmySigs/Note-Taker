@@ -1,13 +1,15 @@
 // dependencies 
-const router = require('express').Router()
 const path = require('path');
 const fs = require('fs')
+const router = require('express').Router()
+
 
 
 var uniqid = require('uniqid');
 
 
 // routing
+
 
 
 router.get('/api/notes', (req, res) => {
@@ -46,3 +48,4 @@ router.delete('/api/notes/:id', (req, res) => {
 })
 
 module.exports = router;
+
