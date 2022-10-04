@@ -7,7 +7,6 @@ const fs = require('fs');
 
 // routing
 
-
 router.get('/api/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../db/db.json'));
 });
