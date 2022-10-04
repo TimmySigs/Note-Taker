@@ -5,7 +5,7 @@ const router = require('express').Router()
 
 
 
-var uniqid = require('uniqid');
+
 
 
 // routing
@@ -26,7 +26,7 @@ router.post('/notes', (req, res) => {
         title: req.body.title,
         text: req.body.text,
 
-        id: uniqid(),
+
     };
 
     db.push(userNote);
