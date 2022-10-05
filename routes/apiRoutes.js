@@ -3,7 +3,7 @@ const router = require('express').Router()
 const path = require('path');
 const fs = require('fs');
 // const router = require('./htmlRoutes');
-
+var uniqid = require('uniqid');
 
 // routing
 
@@ -20,6 +20,7 @@ router.post('/notes', (req, res) => {
     let userNote = {
         title: req.body.title,
         text: req.body.text,
+        id: uniqid(),
 
     };
 
